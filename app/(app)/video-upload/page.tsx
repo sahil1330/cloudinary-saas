@@ -36,7 +36,7 @@ function VideoUpload() {
       }
     } catch (error) {
       console.error("Video upload failed: ", error);
-      alert("Failed to upload Video");
+      alert(error);
     } finally {
       setIsUploading(false);
     }

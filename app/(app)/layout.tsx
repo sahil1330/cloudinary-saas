@@ -71,8 +71,7 @@ export default function AppLayout({
                 <>
                   <div className="avatar">
                     <div className="w-8 h-8 rounded-full">
-                      <img
-                        src={user.imageUrl}
+                      <img src={user.imageUrl}
                         alt={
                           user.username || user.emailAddresses[0].emailAddress
                         }

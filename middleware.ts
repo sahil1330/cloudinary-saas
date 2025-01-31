@@ -18,6 +18,7 @@ export default clerkMiddleware(async (auth, req) => {
      const isAccessingDashboard = currentUrl.pathname === "/home"
      const isApiRequest = currentUrl.pathname.startsWith("/api")
 
+     
      // If user is logged in and accessing a public route but not the dashboard
     if(userId && isPublicRoute(req) && !isAccessingDashboard) {
         return NextResponse.redirect(new URL("/home", req.url))
